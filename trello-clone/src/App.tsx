@@ -1,6 +1,7 @@
 
 import {Column} from './Column'
 import {Card} from './Card'
+import {AddNewItem} from './AddNewItem'
 import { AppContainer } from './styles';
 
 
@@ -16,6 +17,7 @@ const  App = ()=> {
       <Column text = "Done">
         <Card text = 'Begin to use static typing'/>
       </Column>
+     <AddNewItem toggleButtonText='+ Add New List' onAdd = {console.log}/>
       </AppContainer>
   );
 }
